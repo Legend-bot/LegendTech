@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegendTech</title>
+    
+    <!-- Google Fonts for Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* General Body Styling */
+        body {
+            background-color: #F4F4F4;
+            color: #080808;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling (changed to pink) */
+        header {
+            background-color: #FFB6C1; 
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation Styling */
+        nav ul {
+            list-style-type: solid;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        /* Profile Section Styling */
+        #profile {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Gallery Section Styling */
+        #gallery {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .gallery-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .gallery-container img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 8px;
+        }
+
+        /* Contact Form Styling */
+        #contact form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact form div {
+            margin-bottom: 15px;
+        }
+
+        #contact form input, 
+        #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact form button {
+            background-color: #FFB6C1; /* Pink color for button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #contact form button:hover {
+            background-color: #D81B60; /* Darker pink for hover effect */
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Business Website. LegendTech: We develop what's in your mind!</h1>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Box Example</title>
+    <style>
+        .search-container {
+            max-width: 500px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: right;
+        }
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #FFC0CB;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="Search..." id="search">
+        <button class="search-button" onclick="search()">Search</button>
+    </div>
+
+    <script>
+        function search() {
+            var query = document.getElementById("search").value;
+            alert("Searching for: " + query);
+        }
+    </script>
+
+</body>
+</html>
+<main>
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2>Profile</h2>
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+            <p>Hello! I'm LegendTech, a professional IT specialist. This is my business website. I'm skilled in Cyber Security. Welcome to my web!
+                <br><strong>Our Services:</strong>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Web Development</li>
+                    <li>Cyber Security</li>
+                    <li>Software Development</li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <img src="photo1.jpg" alt="Screenshot of a web design project">
+                <img src="photo2.jpg" alt="Screenshot of another web design project">
+                <img src="photo3.jpg" alt="A cyber security project">
+                <img src="photo4.jpg" alt="Another cyber security project">
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at: <a href="mailto:legendtech250@gmail.com">legendtech250@gmail.com</a></p>
+
+            <!-- Contact Form -->
+            <form id="contact-form" action="javascript:void(0);" method="post">
+                <div>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                <div>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required placeholder="Type your message here"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+
+            <div id="form-response"></div>
+        </section>
+    </main>
+<section> <p> <strong> Follow us:</strong>
+    <ul>
+        <li> IG: legend.tech250 </li>
+        <li> Facebook: Legend tech
+        <li> Whatsapp: 0798558354 </li>
+    </ul>
+    </p>
+</section>
+    <footer>
+        <p>&copy; 2024 LegendTech. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Form submission handling with basic validation
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Collect form data
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Basic validation
+            if (!name || !email || !message) {
+                document.getElementById("form-response").innerText = "Please fill in all fields.";
+                return;
+            }
+
+            // Display success message
+            document.getElementById("form-response").innerText = "Thank you, " + name + "! Your message has been sent successfully.";
+
+            // Optionally, clear the form
+            document.getElementById("contact-form").reset();
+        });
+    </script>
+
+</body>
+</html>
